@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(255, 192, 203);
+}
+* {
+  font-family: times new roman;
+  text-align: center;
+}
+button {
+  background-color: rgb(255, 0, 0);
+  border-radius: 6px;
+  border: none;
+  color: rgb(255, 192, 203);
+  padding: 10px;
+  text-transform: uppercase;
+  width: 200px;
+  cursor: pointer;
+}
+#placeholder {
+  height: 100px;
+  width: 100px;
+  padding: 50px;
+  margin: 50px auto;
+  border: 1px solid gray;
+  border-radius: 10px;  
+  font-size:80px;
+}
+
+#player-one,
+#player-two{
+		  float: center;
+		  display: inline-block;
+		  padding: 50px;
+	}
