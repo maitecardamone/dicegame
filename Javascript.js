@@ -31,17 +31,17 @@ function nomeImagemDado(valorDado)
 	var nomeImagem;
 	
 	if (valorDado == 1){
-		nomeImagem = "dado1.png";
+		nomeImagem = "1.jpg";
 	}else if(valorDado == 2){
-		nomeImagem = "dado2.png";
+		nomeImagem = "2.jpg";
 	}else if(valorDado == 3){
-		nomeImagem = "dado3.png";
+		nomeImagem = "3.jpg";
 	}else if(valorDado == 4){
-		nomeImagem = "dado4.png";
+		nomeImagem = "4.jpg";
 	}else if(valorDado == 5){
-		nomeImagem = "dado5.png";
+		nomeImagem = "5.jpg";
 	}else if(valorDado == 6){
-		nomeImagem = "dado6.png";	
+		nomeImagem = "6.jpg";	
 	}else {
 		nomeImagem = valorDado + ".png";
 	}
