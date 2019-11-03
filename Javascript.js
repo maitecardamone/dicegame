@@ -58,17 +58,12 @@ function jogarDado()
 	Dado01 = sorteio(1,6);
 	Dado02 = sorteio(1,6);
 
-	//coloca o texto correto para cada jogador 
-	//utilizando a função criada acima (textoCarta) - a função será executada
-	// e o valor retornado será inserido no comando
 	document.getElementById("textoDado01").innerHTML = "Player 1: " + textoDado(Dado01);
 	document.getElementById("textoDado02").innerHTML = "Player 2: " + textoDado(Dado02);
 
-	//coloca a imagem correta no parâmetro source do elemento de imagem correspondente
 	document.getElementById("imgDado1").src = "imgs/" + nomeImagemDado(Dado01);
 	document.getElementById("imgDado2").src = "imgs/" + nomeImagemDado(Dado02);
 
-	//verifica qual a maior carta e indica quem ganhou
 	if (Dado01 > Dado02){
 		document.getElementById("textoResultado").innerHTML = "Player 1 wins!";
 	}else if (Dado01 < Dado02){
@@ -77,10 +72,5 @@ function jogarDado()
 		document.getElementById("textoResultado").innerHTML = "Draw! Play again!";
 	}
 
-} //fim da função jogarCartas 
-
-
-//este é o unico comando que será executado quando a página carregar.
-//estamos informando ao navegador que a função jogarCartas deve ser executada
-//quando o botão correspondente for pressionado
+} 
 document.getElementById("botaoStart").addEventListener("click", jogarDado);
